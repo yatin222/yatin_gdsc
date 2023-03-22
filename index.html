@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type = "text/css" href="css/style.css">
+</head>
+<body>
+    <script type="text/javascript">
+        function showPopup() {
+            // get the popup element
+            var popup = document.getElementById("myPopup");
+            // show the popup
+            popup.style.display = "block";
+        }
+
+        function hidePopup() {
+            // get the popup element
+            var popup = document.getElementById("myPopup");
+            // hide the popup
+            popup.style.display = "none";
+        }
+    </script>
+    <style type="text/css">
+        /* Style for the popup container */
+        .popup {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+        }
+
+        /* Style for the popup content */
+        .popup-content {
+            background-color: #827575;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #544343;
+            width: 80%;
+            height: 80%;
+        }
+
+        /* Style for the close button */
+        .close {
+            color: #848e63;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+    <!-- Button to trigger the popup -->
+    <button onclick="showPopup()">SIGN IN</button>
+
+    <!-- Popup container -->
+    <div id="myPopup" class="popup">
+        <!-- Popup content -->
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup()">&times;</span>
+            <p>Hello! IM HERE TO WELCOME YOU !! <br> <br> <br> <br>WELCOME TO GOOGLE DEVELOPER CLUB Of CHITKARA UNIVERSITY</p>
+            <br>
+            <p>                https://www.chitkara.edu.in/ </p>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <centre>     <marquee><font size = "+3">Welcome to our Hiring Website <br></font></centre></marquee>
+        <br>
+        <br>
+        <centre>      <marquee right><br><font size = "+2">  GOOGLE DEVELOPER STUDENT CLUB</font></centre></marquee>
+        <br>
+        <br>
+        <br>
+    </header>
+
+    <main>
+        <h2>Current Job Openings</h2>
+        <ul>
+            <li>
+                <h3>SOFTWARE DEVELOPERS </h3>
+                <p>Job description goes here</p>
+                <button>Apply Now</button>
+            </li>
+            <li>
+                <h3>CYBER SECURITY DOMAIN</h3>
+                <p>Job description goes here</p>
+                <button>Apply Now</button>
+            </li>
+            <li>
+                <h3>WEB DEVELOPERS DOMAIN</h3>
+                <p>Job description goes here</p>
+                <button>Apply Now</button>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hiring Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
